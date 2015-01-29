@@ -1,0 +1,12 @@
+%h1 List of Tasks
+= link_to "Add Task", new_calendar_task_path(@calendar)
+%ul
+  - @tasks.each do |p|
+    %li= p.date
+    %li= p.title
+    %li= p.misc
+    %li= p.completed
+    = link_to "Show", calendar_task_path(@calendar, p)
+  %br
+  %br
+  = link_to "Home", root_path
