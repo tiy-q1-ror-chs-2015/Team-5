@@ -1,0 +1,18 @@
+%h1 Test Text
+= form_for @calendar do |c|
+  - if @calendar.errors.any?
+    - @calendar.errors.full_messages.each do |message|
+      = message
+      %br/
+      %br/
+  = c.label :name
+  = c.text_field :name
+  %br
+  = c.label :title
+  = c.text_field :title
+  %br
+  = c.submit
+  %br
+  %br
+  %br
+  = link_to "Cancel", root_path
