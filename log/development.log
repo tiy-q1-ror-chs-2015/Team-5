@@ -5972,3 +5972,3773 @@ Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 
 
 
 Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:05:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTasks (20150129214045)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "title" varchar, "misc" text, "completed" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150129214045"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-01-29 16:51:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (1.1ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 413ms (Views: 384.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:51:13 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 16:51:15 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (17.7ms)
+  Rendered calendars/new.html.haml within layouts/application (26.8ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 16:51:18 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7VxzxP2BdMHiTy8LF09W015vOM9Kjy33pZuAdT/zkSQxlSIUC6718KDqd8GWZIDR8WwzCAEp1ctTf5FegxoraQ==", "calendar"=>{"name"=>"lkajsdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 16:51:18 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.3ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:51:18 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 16:51:22 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.6ms)
+  Rendered calendars/new.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 127ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 16:51:25 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wgz2ns47ZzwFElocYSriAWP1Nb0B0QjiUinIc9kmMAEexadOOBTmDUe3AtbgATQDzPY+ekp38N6kzdlYZc+KTA==", "calendar"=>{"name"=>"asdflkj", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 16:51:25 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (1.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 98ms (Views: 96.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:51:25 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 16:53:02 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.6ms)
+  Rendered calendars/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 95ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 16:53:08 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LVS+sXGwcwFZzujfJveGt/YPqzLl5OYDs5lK2LyBXUjxne9hh5/yMBtrsBWn3FC1WQyg9a5CHj9FfVvzAGjnBQ==", "calendar"=>{"name"=>"adams cal", "title"=>"1234"}, "commit"=>"Create Calendar"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "adams cal"], ["title", "1234"], ["created_at", "2015-01-29 21:53:08.026657"], ["updated_at", "2015-01-29 21:53:08.026657"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 16:53:08 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:53:08 -0500
+
+
+Started GET "/calendars/11" for ::1 at 2015-01-29 16:53:11 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mCalendar Load (0.7ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered calendars/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 123ms (Views: 101.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/calendars/11/edit" for ::1 at 2015-01-29 16:53:12 -0500
+Processing by CalendarsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered calendars/_form.html.haml (5.0ms)
+  Rendered calendars/edit.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 90ms (Views: 88.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/calendars/11" for ::1 at 2015-01-29 16:53:15 -0500
+Processing by CalendarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xrA0ur3PNnN5hpJjEzld3p2kJPfxPfkh2Z3pkLbUtOYaeWVqS+C3QjsjyqmSEovcMqcvMLqbAR0vefi7Cj0Oqw==", "calendar"=>{"name"=>"adams cal", "title"=>""}, "commit"=>"Update Calendar", "id"=>"11"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 16:53:15 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:53:16 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 16:56:55 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (1.1ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 130ms (Views: 119.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:56:55 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 16:56:57 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (4.0ms)
+  Rendered calendars/new.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 16:57:02 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Apvu82QD1xpuY+9z4g3N/XWmpcB4oR0gmldnpits5I4wz5rO7+ObSsc13dOo+E1WtWRUEpEfEh0jUy1JEQJ3w==", "calendar"=>{"name"=>"swkejlrkwjlke", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 16:57:02 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (6.2ms)
+  Rendered calendars/new.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 123ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:57:02 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:57:02 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:57:02 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:57:03 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 16:59:53 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (3.1ms)
+  Rendered calendars/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 117ms (Views: 108.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:59:53 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 16:59:55 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xcm0H/gJHm1OpVZNTZxJa3D3/ohtXgYgZIDwtucL9EAZAOXPDiafXAwADofMt59p3/T1Tyb4/hySZOGdW+JODQ==", "calendar"=>{"name"=>"asdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered calendars/_form.html.haml (2.7ms)
+  Rendered calendars/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 133ms (Views: 124.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 16:59:55 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:00:30 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xcm0H/gJHm1OpVZNTZxJa3D3/ohtXgYgZIDwtucL9EAZAOXPDiafXAwADofMt59p3/T1Tyb4/hySZOGdW+JODQ==", "calendar"=>{"name"=>"asdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  Rendered calendars/_form.html.haml (8.1ms)
+  Rendered calendars/new.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 127ms (Views: 121.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:00:30 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:00:45 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xcm0H/gJHm1OpVZNTZxJa3D3/ohtXgYgZIDwtucL9EAZAOXPDiafXAwADofMt59p3/T1Tyb4/hySZOGdW+JODQ==", "calendar"=>{"name"=>"asdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered calendars/_form.html.haml (9.8ms)
+  Rendered calendars/new.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 145ms (Views: 136.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:00:46 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:00:58 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PRTWdOzdG+A56lxFId2iUbZZvbBa6iMR4DKjHbg93rTh3YekGvKa0XtPBI+g9nRTGVq2dxFM2y0W1rI2BNRk+Q==", "calendar"=>{"name"=>"asdf", "title"=>"asdflkj"}, "commit"=>"Create Calendar"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "asdf"], ["title", "asdflkj"], ["created_at", "2015-01-29 22:00:58.390053"], ["updated_at", "2015-01-29 22:00:58.390053"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 11ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:00:58 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.9ms)
+  Rendered calendars/new.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 128ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:00:58 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:01:01 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.3ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 127ms (Views: 122.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:01:04 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (5.7ms)
+  Rendered calendars/new.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:01:08 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8EyWebZLPKIrKEE7FyqNl1mCa3n7ClB7HPrSngkn26QshcepQGS9k2mNGfGWAVuV9oFgvrCsqEfqHsO1tc5h6Q==", "calendar"=>{"name"=>"help", "title"=>"me"}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "help"], ["title", "me"], ["created_at", "2015-01-29 22:01:08.818099"], ["updated_at", "2015-01-29 22:01:08.818099"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 12ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:01:08 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (3.4ms)
+  Rendered calendars/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 119ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:01:09 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:01:18 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HaW2hJQt0OH/mHCA1a3HChknLOJEm/i5cIIIgnwb8EIv8cK5H82csVbOQiCfWEeh2eXdMK0l94TJhkJtRnVjA==", "calendar"=>{"name"=>"test1", "title"=>"tst1"}, "commit"=>"Create Calendar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "test1"], ["title", "tst1"], ["created_at", "2015-01-29 22:01:18.010357"], ["updated_at", "2015-01-29 22:01:18.010357"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:01:18 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (4.3ms)
+  Rendered calendars/new.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:01:18 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:01:44 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (3.1ms)
+  Rendered calendars/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 135ms (Views: 121.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:01:44 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:01:47 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oZBXbe7J+zycm855ywwPC23taWaQHlV7rxcYWMZyCpx9WQa9GOZ6Dd4+lrNKJ9kJwu5iodu4rUdZ8wlzepuw0Q==", "calendar"=>{"name"=>"stuff", "title"=>"things"}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "stuff"], ["title", "things"], ["created_at", "2015-01-29 22:01:47.959536"], ["updated_at", "2015-01-29 22:01:47.959536"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 10ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:01:47 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.0ms)
+  Rendered calendars/new.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:01:48 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:01:53 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 121ms (Views: 116.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:00 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:01 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.4ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:01 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:03 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:03 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:02:04 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.5ms)
+  Rendered calendars/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 103ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:02:08 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4KbuMl6du3lIH6WRWyguzBnMSPwizkn4SGfL9O/wt1M8b7/iqLI6SAq6/VvaA/jOts9DO2loscS+g9rfUxkNHg==", "calendar"=>{"name"=>"things4", "title"=>"stuff"}, "commit"=>"Create Calendar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "things4"], ["title", "stuff"], ["created_at", "2015-01-29 22:02:08.647140"], ["updated_at", "2015-01-29 22:02:08.647140"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 10ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:02:08 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (3.5ms)
+  Rendered calendars/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:08 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:10 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (5.9ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 119ms (Views: 112.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:22 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.4ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 118ms (Views: 111.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:22 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:23 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:23 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:02:24 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (3.6ms)
+  Rendered calendars/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:02:29 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2teqtxXpXzVZxqeWa1EvkioOQ53iI+B29dRyQ3eF9ocGHvtn48beBBtj/1zqevmQhQ1IWqmFGEoDMGNoy2xMyg==", "calendar"=>{"name"=>"new cal", "title"=>"alright"}, "commit"=>"Create Calendar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "new cal"], ["title", "alright"], ["created_at", "2015-01-29 22:02:29.500742"], ["updated_at", "2015-01-29 22:02:29.500742"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:02:29 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (4.2ms)
+  Rendered calendars/new.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:29 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:32 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:41 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.6ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 120ms (Views: 110.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:41 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:42 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:42 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:02:43 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.4ms)
+  Rendered calendars/new.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 113ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:02:47 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AuI39DvqBiHpBwUNUzrGUbJoPPnKav3eNdpc19OM1XLeK2YkzcWHEKuiXcfSERBTHWs3PoHMBeLDPk38b2VvPw==", "calendar"=>{"name"=>"herew", "title"=>"klaskdf"}, "commit"=>"Create Calendar"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "herew"], ["title", "klaskdf"], ["created_at", "2015-01-29 22:02:47.578343"], ["updated_at", "2015-01-29 22:02:47.578343"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/calendars/new
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:02:47 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (3.2ms)
+  Rendered calendars/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 116ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:47 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:49 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 121ms (Views: 119.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:02:51 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.9ms)
+  Rendered calendars/new.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:02:55 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"82MrTpPu++X2xwL80JaiPZluze/JceWazqNi9OD7phsvqnqeZcF61LRiWjZRvXQ/Nm3GKILXHaY4R3PfXBIcVg==", "calendar"=>{"name"=>"reklj", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:02:55 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.3ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 123ms (Views: 120.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:02:55 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:03:01 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (2.3ms)
+  Rendered calendars/new.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 131ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:03:05 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W3/VUZjOMTKoK2S5XG2EpQzqwQmg/QmWTDwMIyxKD5GHtoSBbuGwA+qOPHPdRlKno+nKzutb8aq62B0IkKO13A==", "calendar"=>{"name"=>"jklas;dfjkl;", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:03:05 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:03:05 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:03:22 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (4.6ms)
+  Rendered calendars/new.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 124ms (Views: 115.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:03:24 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODybfFJxbwtVjEsuVpTRQeXYC2OH3wgi3B21jYRmcDXk9cqspF7uOhcpE+TXvwdDStsApMx58B4q+aSmOI/KeA==", "calendar"=>{"name"=>"asdfasdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered calendars/_form.html.haml (3.3ms)
+  Rendered calendars/new.html.haml within layouts/application (6.3ms)
+Redirected to 
+Completed 500 Internal Server Error in 113ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/calendars_controller.rb:18:in `create'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.9ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (110.1ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:03:37 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODybfFJxbwtVjEsuVpTRQeXYC2OH3wgi3B21jYRmcDXk9cqspF7uOhcpE+TXvwdDStsApMx58B4q+aSmOI/KeA==", "calendar"=>{"name"=>"asdfasdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered calendars/_form.html.haml (3.5ms)
+  Rendered calendars/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 121ms (Views: 107.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:03:37 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:03:52 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODybfFJxbwtVjEsuVpTRQeXYC2OH3wgi3B21jYRmcDXk9cqspF7uOhcpE+TXvwdDStsApMx58B4q+aSmOI/KeA==", "calendar"=>{"name"=>"asdfasdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 24ms
+
+ActionView::MissingTemplate (Missing template calendars/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/Users/adamkelsey/projects/Team-5/app/views"
+):
+  actionview (4.2.0) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.0) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/adamkelsey/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/adamkelsey/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adamkelsey/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adamkelsey/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/missing_template.html.erb within rescues/layout (99.3ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:04:04 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODybfFJxbwtVjEsuVpTRQeXYC2OH3wgi3B21jYRmcDXk9cqspF7uOhcpE+TXvwdDStsApMx58B4q+aSmOI/KeA==", "calendar"=>{"name"=>"asdfasdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered calendars/_form.html.haml (2.9ms)
+  Rendered calendars/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 135ms (Views: 116.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:04:04 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:04:43 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ODybfFJxbwtVjEsuVpTRQeXYC2OH3wgi3B21jYRmcDXk9cqspF7uOhcpE+TXvwdDStsApMx58B4q+aSmOI/KeA==", "calendar"=>{"name"=>"asdfasdf", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered calendars/_form.html.haml (3.9ms)
+  Rendered calendars/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 135ms (Views: 107.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:04:43 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:04:44 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.3ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 128ms (Views: 122.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:04:44 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:04:45 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:04:46 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:04:46 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (1.9ms)
+  Rendered calendars/new.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:04:54 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"akC4DAzPoUgOp7A8X9ouVjY0mXUhRFrvc5btbWNckra2ienc+uAgeUwC6Pbe8fhUmTeSsmriotOFcvxG37Uo+w==", "calendar"=>{"name"=>"herekl;ok", "title"=>"alright"}, "commit"=>"Create Calendar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "herekl;ok"], ["title", "alright"], ["created_at", "2015-01-29 22:04:54.897198"], ["updated_at", "2015-01-29 22:04:54.897198"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered calendars/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 120ms (Views: 112.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:04:55 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:06:36 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"akC4DAzPoUgOp7A8X9ouVjY0mXUhRFrvc5btbWNckra2ienc+uAgeUwC6Pbe8fhUmTeSsmriotOFcvxG37Uo+w==", "calendar"=>{"name"=>"herekl;ok", "title"=>"alright"}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "herekl;ok"], ["title", "alright"], ["created_at", "2015-01-29 22:06:36.913442"], ["updated_at", "2015-01-29 22:06:36.913442"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:06:36 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 120ms (Views: 116.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:06:37 -0500
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 17:06:40 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (4.3ms)
+  Rendered calendars/new.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 134ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:06:43 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CEekRRi9FogbV6VbiqOWcTt90TMA8Nj+j0Aspjt6atHUjvWV7pKXuVny/ZELiEBzlH7a9EtWIMJ5pD2Nh5PQnA==", "calendar"=>{"name"=>"testing", "title"=>""}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered calendars/_form.html.haml (3.9ms)
+  Rendered calendars/new.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 118ms (Views: 110.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:06:43 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:06:44 -0500
+
+
+Started POST "/calendars" for ::1 at 2015-01-29 17:06:52 -0500
+Processing by CalendarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOfR9RMddTdMw1eWBi7AdNdgxJoblzXX/miXaaYX/qfsLoAl5TL0Bg5mD1yHBRZ2eGPPXVAxzesIjIZCGv5E6g==", "calendar"=>{"name"=>"testing", "title"=>"testing"}, "commit"=>"Create Calendar"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "calendars" ("name", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "testing"], ["title", "testing"], ["created_at", "2015-01-29 22:06:52.431438"], ["updated_at", "2015-01-29 22:06:52.431438"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:06:52 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.4ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:06:52 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 17:08:07 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: %h1 Welcome
+    2: 
+    3: = form_for @calendar do |c|
+    4:   - if @calendar.errors.any?
+    5:     - @calendar.errors.full_messages.each do |message|
+    6:       = message
+  app/views/home/index.html.haml:3:in `_app_views_home_index_html_haml__2783791377835215562_70112662222060'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (114.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:09:11 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:09:11 -0500
+
+
+Started GET "/calendars/21" for ::1 at 2015-01-29 17:09:13 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mCalendar Load (0.6ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered calendars/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 125ms (Views: 119.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/calendars/21" for ::1 at 2015-01-29 17:09:15 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YJ4JmJbWf9ZUWWosCucW93hEa1g/PainMhtpm0l/jhy8V1hIYPn+5xb8MuaLzMD110dgn3SbUJvE/3iw9ZY0UQ==", "id"=>"21"}
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mTask Load (1.6ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?  [[nil, 21]]
+SQLite3::SQLException: no such column: tasks.calendar_id: SELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 27ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: tasks.calendar_id: SELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?):
+  app/controllers/calendars_controller.rb:38:in `destroy'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (99.1ms)
+
+
+Started GET "/calendars/21/edit" for ::1 at 2015-01-29 17:09:23 -0500
+Processing by CalendarsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered calendars/_form.html.haml (2.0ms)
+  Rendered calendars/edit.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/calendars/21" for ::1 at 2015-01-29 17:09:27 -0500
+Processing by CalendarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rtoFcRlK7MHT/scnyGrBMv3CFATTowOPncMGvuYZhEVyE1Sh72Vt8JFbn+1JQRcwUsEfw5gF+7NrJxeVWvA+CA==", "calendar"=>{"name"=>"testing666", "title"=>"testing"}, "commit"=>"Update Calendar", "id"=>"21"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "calendars" SET "name" = ?, "updated_at" = ? WHERE "calendars"."id" = ?[0m  [["name", "testing666"], ["updated_at", "2015-01-29 22:09:27.510894"], ["id", 21]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:09:27 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 119ms (Views: 117.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:09:27 -0500
+
+
+Started GET "/calendars/21" for ::1 at 2015-01-29 17:09:30 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered calendars/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 114ms (Views: 112.2ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/calendars/21" for ::1 at 2015-01-29 17:09:31 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G/Baq3us6r99ri0Q6ujCtKEwg75wXOJPq/43f/HkYNvHOQt7jYNrjj8LddprwxS2DjOIeTv6GnNdGiZUTQ3alg==", "id"=>"21"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTask Load (2.0ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?[0m  [[nil, 21]]
+SQLite3::SQLException: no such column: tasks.calendar_id: SELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: tasks.calendar_id: SELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?):
+  app/controllers/calendars_controller.rb:38:in `destroy'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (96.7ms)
+
+
+Started GET "/calendars/21" for ::1 at 2015-01-29 17:11:06 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered calendars/show.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 110ms (Views: 100.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:11:06 -0500
+
+
+Started DELETE "/calendars/21" for ::1 at 2015-01-29 17:11:07 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/tykO6lQ4GHKDaGPApaOY6VofjxkjWS++9QV70TazXwiFfXrX39hUIio+UWDvVhhCmt1+y8rnIINMATE+DN3MQ==", "id"=>"21"}
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "calendars" WHERE "calendars"."id" = ?  [["id", 21]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:11:07 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 125ms (Views: 120.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:11:07 -0500
+
+
+Started GET "/calendars/20" for ::1 at 2015-01-29 17:11:09 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 20]]
+  Rendered calendars/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 95ms (Views: 93.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/calendars/20" for ::1 at 2015-01-29 17:11:10 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m6qtx5hrstP1xXunVx/cVVrGPtu2nPSnZV6gvWm9zFRHY/wXbkQz4rdgI23WNApX9cU1HP06DJuTurGW1VR2GQ==", "id"=>"20"}
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "calendars" WHERE "calendars"."id" = ?  [["id", 20]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:11:10 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:11:10 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:11:10 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:10 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:10 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:10 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:10 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:11:11 -0500
+
+
+Started GET "/calendars/19" for ::1 at 2015-01-29 17:11:12 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 19]]
+  Rendered calendars/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 115.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/calendars/19" for ::1 at 2015-01-29 17:11:13 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mZh421vXzxXvOMDlomOUrU01RjNeTBwaGFttF9cCaaZFUSkLrfhOJK2dmC8jSEKv4jZN9BXq5Cbuv3w8a+vT6w==", "id"=>"19"}
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "calendars" WHERE "calendars"."id" = ?  [["id", 19]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:11:13 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 113ms (Views: 111.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:11:13 -0500
+
+
+Started GET "/calendars/18" for ::1 at 2015-01-29 17:11:14 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 18]]
+  Rendered calendars/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 114.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/calendars/18" for ::1 at 2015-01-29 17:11:15 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JZUB8ZsdFkVjiQkAzwNYdGzojLjtJ5542L2hkSU3zWH5XFAhbTKXdCEsUcpOKI52w+uHf6aBZkQuWbC6md53LA==", "id"=>"18"}
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "calendars" WHERE "calendars"."id" = ?  [["id", 18]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:11:15 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 117ms (Views: 115.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:11:15 -0500
+
+
+Started GET "/calendars/17" for ::1 at 2015-01-29 17:11:16 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered calendars/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/calendars/17" for ::1 at 2015-01-29 17:11:18 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DgKUAlT3Yx4SwkAhOcKpf3H3fX4EJfeIZNUp/0kDM4XSy8XSotjiL1BnGOu46X993vR2uU+DD7SSMTjU9eqJyA==", "id"=>"17"}
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "calendars" WHERE "calendars"."id" = ?  [["id", 17]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:11:18 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:11:18 -0500
+
+
+Started GET "/calendars/16" for ::1 at 2015-01-29 17:11:19 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered calendars/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 135ms (Views: 133.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/calendars/16" for ::1 at 2015-01-29 17:11:20 -0500
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e3GnZwBgB7E58LLaqNvMvKPR7Brb2EiwCSNXFsB3mIqnuPa39k+GgHtV6hAp8Bq+DNLn3ZB+sIz/x0Y9fJ4ixw==", "id"=>"16"}
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "calendars" WHERE "calendars"."id" = ?  [["id", 16]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 17:11:20 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 117ms (Views: 115.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:11:20 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:11:20 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:20 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:20 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:20 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:11:20 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:11:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCalendarIdToTasks (20150129222116)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "tasks" ADD "calendar_id" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150129222116"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-01-29 17:51:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 107ms (Views: 99.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 17:51:12 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 18:01:34 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:01:34 -0500
+
+
+Started GET "/calendars/1" for ::1 at 2015-01-29 18:01:37 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCalendar Load (0.3ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered calendars/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/new" for ::1 at 2015-01-29 18:01:45 -0500
+Processing by CalendarsController#new as HTML
+  Rendered calendars/_form.html.haml (3.4ms)
+  Rendered calendars/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 18:01:46 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 97ms (Views: 95.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/calendars/1" for ::1 at 2015-01-29 18:01:48 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered calendars/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-01-29 18:02:17 -0500
+Processing by HomeController#index as HTML
+  [1m[36mCalendar Load (0.4ms)[0m  [1mSELECT "calendars".* FROM "calendars"[0m
+  Rendered home/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 107ms (Views: 101.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:02:17 -0500
+
+
+Started GET "/" for ::1 at 2015-01-29 18:04:19 -0500
+Processing by HomeController#index as HTML
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT "calendars".* FROM "calendars"
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:04:19 -0500
+
+
+Started GET "/calendars/1" for ::1 at 2015-01-29 18:04:21 -0500
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered calendars/show.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 132ms (Views: 129.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/1/tasks" for ::1 at 2015-01-29 18:04:23 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?[0m  [["calendar_id", "1"]]
+  Rendered tasks/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 96ms (Views: 92.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/1/tasks/new" for ::1 at 2015-01-29 18:04:25 -0500
+Processing by TasksController#new as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/_form.html.haml (41.9ms)
+  Rendered tasks/new.html.haml within layouts/application (47.8ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (undefined method `boolean' for #<ActionView::Helpers::FormBuilder:0x007f88bfbc04b8>):
+    14:   = p.text_area :misc
+    15:   %br
+    16:   = p.label :completed
+    17:   = p.boolean :completed
+    18:   %br
+    19:   = p.submit
+    20:   %br
+  app/views/tasks/_form.html.haml:17:in `block in _app_views_tasks__form_html_haml___3736491872129949036_70112629135740'
+  app/views/tasks/_form.html.haml:1:in `_app_views_tasks__form_html_haml___3736491872129949036_70112629135740'
+  app/views/tasks/new.html.haml:3:in `_app_views_tasks_new_html_haml___666162689169213261_70112655071060'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.9ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (108.6ms)
+
+
+Started GET "/calendars/1/tasks/new" for ::1 at 2015-01-29 18:04:26 -0500
+Processing by TasksController#new as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tasks/_form.html.haml (30.9ms)
+  Rendered tasks/new.html.haml within layouts/application (34.6ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (undefined method `boolean' for #<ActionView::Helpers::FormBuilder:0x007f88c089bb38>):
+    14:   = p.text_area :misc
+    15:   %br
+    16:   = p.label :completed
+    17:   = p.boolean :completed
+    18:   %br
+    19:   = p.submit
+    20:   %br
+  app/views/tasks/_form.html.haml:17:in `block in _app_views_tasks__form_html_haml___3736491872129949036_70112629182240'
+  app/views/tasks/_form.html.haml:1:in `_app_views_tasks__form_html_haml___3736491872129949036_70112629182240'
+  app/views/tasks/new.html.haml:3:in `_app_views_tasks_new_html_haml___666162689169213261_70112655185280'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (92.9ms)
+
+
+Started GET "/calendars/1/tasks/new" for ::1 at 2015-01-29 18:07:47 -0500
+Processing by TasksController#new as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/_form.html.haml (31.1ms)
+  Rendered tasks/new.html.haml within layouts/application (35.4ms)
+Completed 200 OK in 126ms (Views: 124.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:07:47 -0500
+
+
+Started POST "/calendars/1/tasks" for ::1 at 2015-01-29 18:08:14 -0500
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3j3/XlkuVlGjqm//cxDHHLqCEq4NAk4rcMOrZslp3eEC9K6OrwHXYOEPNzXyOxEeFYEZaUaktheGJ7pNdYBnrA==", "task"=>{"date(1i)"=>"2015", "date(2i)"=>"3", "date(3i)"=>"13", "date(4i)"=>"23", "date(5i)"=>"00", "title"=>"Walk the dog", "misc"=>"DO IT SON", "completed"=>"true"}, "commit"=>"Create Task", "calendar_id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "tasks" ("title", "misc", "completed", "date", "calendar_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Walk the dog"], ["misc", "DO IT SON"], ["completed", "t"], ["date", "2015-03-13 23:00:00.000000"], ["calendar_id", "1"], ["created_at", "2015-01-29 23:08:14.192559"], ["updated_at", "2015-01-29 23:08:14.192559"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/calendars/1/tasks
+Completed 302 Found in 20ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/calendars/1/tasks" for ::1 at 2015-01-29 18:08:14 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?  [["calendar_id", "1"]]
+  Rendered tasks/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 81ms (Views: 78.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:08:14 -0500
+
+
+Started GET "/calendars/1/tasks/1" for ::1 at 2015-01-29 18:08:18 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/show.html.haml within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :calendar_id=>nil, :controller=>"tasks", :id=>"1"} missing required keys: [:calendar_id]):
+     8: = @task.completed
+     9: %br
+    10: %br
+    11: = linnk_to "Edit", edit_calendar_task_path(@hospital, @task)
+    12: %br
+    13: = link_to "Delete", calendar_task_path(@calendar, @task), method: :delete
+    14: %br
+  app/views/tasks/show.html.haml:11:in `_app_views_tasks_show_html_haml__1177369496380378108_70112633195840'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+
+
+Started GET "/calendars/1/tasks/1" for ::1 at 2015-01-29 18:08:18 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/show.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :calendar_id=>nil, :controller=>"tasks", :id=>"1"} missing required keys: [:calendar_id]):
+     8: = @task.completed
+     9: %br
+    10: %br
+    11: = linnk_to "Edit", edit_calendar_task_path(@hospital, @task)
+    12: %br
+    13: = link_to "Delete", calendar_task_path(@calendar, @task), method: :delete
+    14: %br
+  app/views/tasks/show.html.haml:11:in `_app_views_tasks_show_html_haml__1177369496380378108_70112671053260'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (97.8ms)
+
+
+Started GET "/calendars/1/tasks/1" for ::1 at 2015-01-29 18:09:02 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.3ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/show.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :calendar_id=>nil, :controller=>"tasks", :id=>"1"} missing required keys: [:calendar_id]):
+     8: = @task.completed
+     9: %br
+    10: %br
+    11: = link_to "Edit", edit_calendar_task_path(@hospital, @task)
+    12: %br
+    13: = link_to "Delete", calendar_task_path(@calendar, @task), method: :delete
+    14: %br
+  app/views/tasks/show.html.haml:11:in `_app_views_tasks_show_html_haml__1177369496380378108_70112670220200'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (100.9ms)
+
+
+Started GET "/calendars/1/tasks/1" for ::1 at 2015-01-29 18:10:06 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/show.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 97ms (Views: 93.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:10:06 -0500
+
+
+Started GET "/calendars/1/tasks/1/edit" for ::1 at 2015-01-29 18:10:08 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/edit.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 14ms
+
+SyntaxError (/Users/adamkelsey/projects/Team-5/app/views/tasks/edit.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting ')'):
+  app/views/tasks/edit.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (101.1ms)
+
+
+Started GET "/calendars/1/tasks/1/edit" for ::1 at 2015-01-29 18:10:09 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/edit.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 11ms
+
+SyntaxError (/Users/adamkelsey/projects/Team-5/app/views/tasks/edit.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting ')'):
+  app/views/tasks/edit.html.haml:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.4ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /Users/adamkelsey/.rvm/gems/ruby-2.2.0@adam-kelsey_team-5/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (103.6ms)
+
+
+Started GET "/calendars/1/tasks/1/edit" for ::1 at 2015-01-29 18:10:18 -0500
+Processing by TasksController#edit as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/_form.html.haml (7.8ms)
+  Rendered tasks/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 113ms (Views: 108.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:10:18 -0500
+
+
+Started PATCH "/calendars/1/tasks/1" for ::1 at 2015-01-29 18:10:23 -0500
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Arip92V/zeHcgTF/rwlAS11z2nXeJgxb0b1CElFdPZTecfgnk1BM0J4kabUuIpZJ8nDRspWA9GcnWVM57bSH2Q==", "task"=>{"date(1i)"=>"2015", "date(2i)"=>"3", "date(3i)"=>"13", "date(4i)"=>"23", "date(5i)"=>"00", "title"=>"Walk the dog", "misc"=>"DO IT SONN", "completed"=>"true"}, "commit"=>"Update Task", "calendar_id"=>"1", "id"=>"1"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.8ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1  [["calendar_id", "1"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "tasks" SET "misc" = ?, "updated_at" = ? WHERE "tasks"."id" = ?  [["misc", "DO IT SONN"], ["updated_at", "2015-01-29 23:10:23.465636"], ["id", 1]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/calendars/1/tasks
+Completed 302 Found in 18ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/calendars/1/tasks" for ::1 at 2015-01-29 18:10:23 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?[0m  [["calendar_id", "1"]]
+  Rendered tasks/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:10:23 -0500
+
+
+Started GET "/calendars/1/tasks/1" for ::1 at 2015-01-29 18:10:25 -0500
+Processing by TasksController#show as HTML
+  Parameters: {"calendar_id"=>"1", "id"=>"1"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1[0m  [["calendar_id", "1"], ["id", 1]]
+  Rendered tasks/show.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 103ms (Views: 100.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/calendars/1/tasks/1" for ::1 at 2015-01-29 18:10:26 -0500
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ouqc+yUU+ZOdo16zM9fMtCGIFa1Zmny8eUQrtQWclUDmI80r0zt4ot8GBnmy/Bq2joseahI8hICPoDqeuXUvDQ==", "calendar_id"=>"1", "id"=>"1"}
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ? AND "tasks"."id" = ? LIMIT 1[0m  [["calendar_id", "1"], ["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (8.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/calendars/1/tasks
+Completed 302 Found in 15ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/calendars/1/tasks" for ::1 at 2015-01-29 18:10:26 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?  [["calendar_id", "1"]]
+  Rendered tasks/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:10:26 -0500
+
+
+Started GET "/calendars/1/tasks/new" for ::1 at 2015-01-29 18:10:28 -0500
+Processing by TasksController#new as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tasks/_form.html.haml (6.4ms)
+  Rendered tasks/new.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 115ms (Views: 112.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/calendars/1/tasks" for ::1 at 2015-01-29 18:10:34 -0500
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TCmRH/iUCelvoFsc/WHs9ToDxDV9a1ldxSsOtEhobnyQ4MDPDruI2C0FA9Z8Sjr3lQDP8jbNoWEzzx+f9IHUMQ==", "task"=>{"date(1i)"=>"2015", "date(2i)"=>"1", "date(3i)"=>"29", "date(4i)"=>"23", "date(5i)"=>"00", "title"=>"HA", "misc"=>"IT WORKS", "completed"=>"true"}, "commit"=>"Create Task", "calendar_id"=>"1"}
+  [1m[35mCalendar Load (0.2ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("title", "misc", "completed", "date", "calendar_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "HA"], ["misc", "IT WORKS"], ["completed", "t"], ["date", "2015-01-29 23:00:00.000000"], ["calendar_id", "1"], ["created_at", "2015-01-29 23:10:34.629900"], ["updated_at", "2015-01-29 23:10:34.629900"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/calendars/1/tasks
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/calendars/1/tasks" for ::1 at 2015-01-29 18:10:34 -0500
+Processing by TasksController#index as HTML
+  Parameters: {"calendar_id"=>"1"}
+  [1m[35mCalendar Load (0.1ms)[0m  SELECT  "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."calendar_id" = ?[0m  [["calendar_id", "1"]]
+  Rendered tasks/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 102ms (Views: 99.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-5c75a68b459b822602e3dd6743ed6a2b.css?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/theme-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/bootstrap-theme-f1cf5d3e20c81d98eeacbf635ead0663.css?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/application-9207215440aafa3c1b3d97406c494c42.css?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/calendars-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/calendars-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-01-29 18:10:34 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-01-29 18:10:34 -0500

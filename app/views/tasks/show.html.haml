@@ -1,0 +1,16 @@
+%h1 Current Task
+= @task.date
+%br
+= @task.title
+%br
+= @task.misc
+%br
+= @task.completed
+%br
+%br
+= link_to "Edit", edit_calendar_task_path(@calendar, @task)
+%br
+= link_to "Delete", calendar_task_path(@calendar, @task), method: :delete
+%br
+%br
+= link_to "Back", calendar_tasks_path

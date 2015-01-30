@@ -1,0 +1,22 @@
+= form_for [@calendar, @task] do |p|
+  - if @task.errors.any?
+    - @task.errors.full_messages.each do |message|
+      = message
+      %br
+      %br
+  = p.label :date
+  = p.datetime_select :date, :ampm => true, :hour_step => 1, :minute_step => 15
+  %br
+  = p.label :title
+  = p.text_field :title
+  %br
+  = p.label :misc
+  = p.text_area :misc
+  %br
+  = p.label :completed
+  = p.check_box :completed, {}, true, false
+  %br
+  = p.submit
+  %br
+  %br
+  = link_to "Cancel", root_path

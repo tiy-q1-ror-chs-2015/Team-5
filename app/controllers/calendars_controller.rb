@@ -9,7 +9,13 @@ class CalendarsController < ApplicationController
 
   def create
     @calendar = Calendar.create calendar_params
-    redirect_to root_path
+    if @calendar.save
+      flash[:notice] = 'Calendar was successfully created'
+      redirect_to root_path
+    else
+      flash[:error] = 'Calendar was NOT saved'
+      render :new
+    end
   end
 
   def show
