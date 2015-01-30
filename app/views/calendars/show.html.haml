@@ -1,10 +1,15 @@
-%h1 Calendar
-
-%h3= @calendar.name
+%h1= @calendar.name
 %h3= @calendar.title
 %br
 = link_to "Edit", edit_calendar_path(@calendar)
 = link_to "Delete", calendar_path(@calendar), method: :delete
 %br
+%br
 = link_to "View Tasks", calendar_tasks_path(@calendar)
+<<<<<<< HEAD
+%br
+%br
+= link_to "Home", root_path
+=======
 
+>>>>>>> ff5a18000df02b579c9306bff4b368c037cbf749
