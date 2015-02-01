@@ -1,7 +1,21 @@
 #index h1 {
-  color: crimson;
+  color: grey;
+  font-family: "Hoefler Text", Georgia, 'Times New Roman',serif;
+  font-size: 3.75em;
+
 }
 
 #calendarform h3 {
   color: plum;
+}
+
+#body {
+  
+  background-image: url("images/steel.jpg");
+}
+
+label{ 
+  text-align:left;
+  margin-right: 0.4em;
+  display:block
 }
