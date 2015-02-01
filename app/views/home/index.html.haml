@@ -1,9 +1,10 @@
-%body#index
-  %h1 Welcome
+%div.row
+  .col-md-12
+    %h1.welcome Welcome
 
 %ul
   - @calendars.each do |c|
-    %li 
+    %li.move_over 
       =c.name
       =c.title
       %br

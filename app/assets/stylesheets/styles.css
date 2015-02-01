@@ -1,8 +1,10 @@
-#index h1 {
-  color: grey;
+h1.welcome {
+  color: crimson;
   font-family: "Hoefler Text", Georgia, 'Times New Roman',serif;
   font-size: 3.75em;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
 }
 
 #calendarform h3 {
@@ -14,8 +16,27 @@
   background-image: url("images/steel.jpg");
 }
 
+ul li.move_over {
+  margin-left: auto;
+  margin-right: auto;
+  width: 14%;
+}
+
 label{ 
   text-align:left;
   margin-right: 0.4em;
   display:block
+}
+
+h1.newcalendar {
+  color: crimson;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
+}
+
+.createcalendar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
 }
