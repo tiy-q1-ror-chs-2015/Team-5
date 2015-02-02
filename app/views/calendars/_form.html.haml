@@ -1,17 +1,26 @@
-= form_for @calendar do |c|
-  - if @calendar.errors.any?
-    - @calendar.errors.full_messages.each do |message|
-      = message
-      %br/
-      %br/
-  = c.label :name
-  = c.text_field :name
-  %br
-  = c.label :title
-  = c.text_field :title
-  %br
-  = c.submit
-  %br
-  %br
-  %br
-  = link_to "Cancel", root_path
+%div.row
+  .col-md-12
+    %h1.newcalendar New Calendar
+
+%div.row
+  .col-md-12
+    %h4.createcalendar
+
+      = form_for @calendar do |c|
+        - if @calendar.errors.any?
+          - @calendar.errors.full_messages.each do |message|
+            = message
+            %br/
+            %br/
+        = c.label :name
+        = c.text_field :name
+        %br
+        = c.label :title
+        = c.text_field :title
+        %br
+        %br
+        = c.submit "Save Calendar"
+        %br
+        %br
+        %br
+        = link_to "Cancel", root_path, class: "btn btn-danger btn-sm"

@@ -35,14 +35,14 @@ class TasksController < ApplicationController
     @calendar = Calendar.find params[:calendar_id]
     @task = @calendar.tasks.find params[:id]
     @task.update_attributes task_params
-    redirect_to calendar_tasks_path
+    redirect_to calendar_task_path
   end
 
   def destroy
     @calendar = Calendar.find params[:calendar_id]
     @task = @calendar.tasks.find params[:id]
     @task.destroy
-    redirect_to calendar_tasks_path
+    redirect_to calendar_path(@calendar)
   end
 
   private
