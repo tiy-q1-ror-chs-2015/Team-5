@@ -6,3 +6,8 @@
 %br
 %br
 = link_to "View Tasks", calendar_tasks_path(@calendar)
+%br
+= link_to "Add Task", new_calendar_task_path(@calendar)
+
+= calendar(@calendar_gem_params) do |d|
+  -CalendarsController.is_date?(d, @calendar)

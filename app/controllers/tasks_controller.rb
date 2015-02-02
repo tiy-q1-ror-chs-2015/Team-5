@@ -14,7 +14,7 @@ class TasksController < ApplicationController
     @task = @calendar.tasks.create task_params
     if @task.save
       flash[:notice] = 'Task was successfully created'
-      redirect_to calendar_tasks_path
+      redirect_to calendar_path(@calendar)
     else
       flash[:error] = 'Task was NOT saved.'
       render :new
@@ -42,7 +42,7 @@ class TasksController < ApplicationController
     @calendar = Calendar.find params[:calendar_id]
     @task = @calendar.tasks.find params[:id]
     @task.destroy
-    redirect_to calendar_tasks_path
+    redirect_to calendar_path(@calendar)
   end
 
   private
